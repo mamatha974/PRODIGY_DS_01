@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+years = [1990, 1994, 2000, 2010, 2020, 2023]
+population = [5.3, 5.65, 6.1, 6.9, 7.8, 8.1]  # Replace with exact values if needed
+plt.figure(figsize=(8, 5))
+plt.bar(years, population, color='mediumseagreen')
+plt.title('World Population Growth Over Years')
+plt.xlabel('Year')
+plt.ylabel('Population (Billions)')
+plt.xticks(years)
+plt.grid(axis='y', linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.savefig("population_bar_chart.png")  # Saves the chart as an image
+plt.show()
